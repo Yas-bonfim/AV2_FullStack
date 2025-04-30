@@ -35,3 +35,8 @@ exports.login = async ({ email, password }) => {
     return { status: 500, data: { message: 'Erro no servidor' } };
   }
 };
+
+module.exports = {
+  register,
+  login,
+};

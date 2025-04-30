@@ -32,8 +32,6 @@ mongoose.connect(process.env.MONGODB_URI, {
   console.error('Erro ao conectar ao MongoDB:', err.message);
 });
 
-// Exporta o app para uso na Vercel
-module.exports = app;
 
 // Inicia o servidor localmente (não executado na Vercel)
 if (require.main === module) {
@@ -43,3 +41,5 @@ if (require.main === module) {
   });
 }
 
+// Exporta o app para uso na Vercel
+module.exports = app;

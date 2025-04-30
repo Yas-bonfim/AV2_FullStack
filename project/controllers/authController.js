@@ -13,3 +13,10 @@ exports.login = async (req, res) => {
 exports.protected = (req, res) => {
   res.json({ message: 'Acesso autorizado' });
 };
+
+
+module.exports = {
+  register,
+  login,
+  protected: protectedRoute,
+};
