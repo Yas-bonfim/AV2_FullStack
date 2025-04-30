@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
+const path = require('path'); 
+
 
 const authRoutes = require('../routes/authRoutes');
 const protectedRoutes = require('../routes/protectedRoutes');
@@ -16,14 +18,14 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // Rotas
-app.use(authRoutes);
-app.use(protectedRoutes);
+app.use('/api', authRoutes);
+app.use('/protected',protectedRoutes);
 
 // Middleware de erro
 app.use(errorMiddleware);
 
 // Conexão com o MongoDB (local e produção)
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
