@@ -8,11 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/api/auth/(.*)",
-      "dest": "app.js"
-    },
-    {
-      "src": "/api/protected/(.*)",
+      "src": "/api/(.*)",
       "dest": "app.js"
     }
   ]
