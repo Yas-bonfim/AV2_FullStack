@@ -2,7 +2,7 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-exports.register = async ({ name, email, password }) => {
+const register = async ({ name, email, password }) => {
   if (!name || !email || !password) return { status: 400, data: { message: 'Dados inválidos' } };
 
   try {
@@ -17,7 +17,7 @@ exports.register = async ({ name, email, password }) => {
   }
 };
 
-exports.login = async ({ email, password }) => {
+const login = async ({ email, password }) => {
   if (!email || !password) return { status: 400, data: { message: 'Dados inválidos' } };
 
   try {
@@ -38,5 +38,5 @@ exports.login = async ({ email, password }) => {
 
 module.exports = {
   register,
-  login,
+  login
 };

@@ -1,11 +1,11 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "api/app.js",
   "scripts": {
-  "start": "node app.js",
-  "dev": "nodemon app.js"
-},
+    "start": "node api/app.js",
+    "dev": "nodemon api/app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,5 +17,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
