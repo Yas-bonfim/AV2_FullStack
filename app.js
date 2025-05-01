@@ -18,8 +18,8 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // Rotas
-app.use(authRoutes);
-app.use(protectedRoutes);
+app.use('/api/auth',authRoutes);
+app.use('/api/protected',protectedRoutes);
 
 // Middleware de erro
 app.use(errorMiddleware);
