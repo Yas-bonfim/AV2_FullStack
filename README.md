@@ -2,6 +2,8 @@
 
 Este projeto é uma API RESTful desenvolvida com Node.js, Express e MongoDB. Ele implementa autenticação de usuários utilizando JWT (JSON Web Token), seguindo uma arquitetura em camadas.
 
+Link do video demonstrativo : [https://youtu.be/QB596SY0Ee0]
+
 ---
 
 ## 📌 Funcionalidades
