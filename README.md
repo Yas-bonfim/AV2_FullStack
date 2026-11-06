@@ -20,7 +20,7 @@ Link do video demonstrativo : [https://youtu.be/QB596SY0Ee0]
 ---
 
 ## 🗂️ Estrutura de pastas
-
+```
 project/ 
 │ 
 ├── app.js 
@@ -42,7 +42,7 @@ project/
 │ └── User.js 
 ├── database/ 
 │ └── mongo.js 
-
+``` 
 
 
 ---
